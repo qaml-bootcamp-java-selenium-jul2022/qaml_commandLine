@@ -9,7 +9,7 @@ public class Main {
 	// write your code here
         Person trabajadorSalarioMinimo = new Person();
         Person trabajadorOficinista = new Person();
-        
+
         trabajadorSalarioMinimo.setName("Test main branch");
         String nombreSalarioMinimo = trabajadorSalarioMinimo.getName();
         System.out.println(nombreSalarioMinimo);
