@@ -9,3 +9,12 @@ out/production/qaml_commandLine/com/qaml_clase/Main.class
 .idea/misc.xml
 .idea/encodings.xml
 .idea/description.html
+out/production/qaml_commandLine/EjercicioVideojuego/Elfo.class
+out/production/qaml_commandLine/EjercicioVideojuego/Enano.class
+out/production/qaml_commandLine/EjercicioVideojuego/Humano.class
+out/production/qaml_commandLine/EjercicioVideojuego/Personaje.class
+out/production/qaml_commandLine/Transportes/Autobus.class
+out/production/qaml_commandLine/Transportes/AutobusPasajeros.class
+out/production/qaml_commandLine/Transportes/Avion.class
+*.class
+.idea/uiDesigner.xml
