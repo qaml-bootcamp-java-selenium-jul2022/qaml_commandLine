@@ -5,13 +5,14 @@ public class Person {
     private String name = "Nombre default";
     private Double salarioMinimoMensual = 3500.89;
     private Double taxPorcentaje = 0.30;
+    public String Titulo = "Titulo test";
 
     public Double BasicPay;
 
     //Getter (método para obtener el valor de name)
     public String getName () {
         System.out.println("Regresando el valor de name");
-        return name;
+        return this.name;
     }
 
     //Setter (método para establecer el valor de name)
@@ -38,5 +39,15 @@ public class Person {
         //Calculando el porcentaje de impuestos
         System.out.println("Cálculo de porcentaje de impuestos en base al salario");
         return this.salarioMinimoMensual * this.taxPorcentaje;
+    }
+
+    public Double getSalarioMinimoMensual () {
+        System.out.println("Regresar fuera del objeto el valor de Salario Minimo Mensual");
+        return this.salarioMinimoMensual;
+    }
+
+    public void setSalarioMinimoMensual (Double salarioMinimoMensual) {
+        System.out.println("Establecer desde fuera del objeto el valor de Salario Minimo Mensual");
+        this.salarioMinimoMensual = salarioMinimoMensual;
     }
 }
