@@ -6,6 +6,7 @@ public class Person {
     private Double salarioMinimoMensual = 3500.89;
     private Double taxPorcentaje = 0.30;
     public String Titulo = "Titulo test";
+    public final String variableFinal = "Esta variable no se puede modificar porque es final";
 
     public Double BasicPay;
 

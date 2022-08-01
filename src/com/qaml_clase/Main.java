@@ -1,13 +1,10 @@
 package com.qaml_clase;
 
-import EjercicioVideojuego.Elfo;
-import Transportes.AutobusPasajeros;
-
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Person trabajadorSalarioMinimo = new Person();
+        final Person trabajadorSalarioMinimo = new Person();
         Person trabajadorOficinista = new Person();
 
         trabajadorSalarioMinimo.setName("Test main branch");
@@ -23,11 +20,18 @@ public class Main {
 
         //Ejercicios medios de transporte
 
-        AutobusPasajeros autobusPrimeraPlus = new AutobusPasajeros();
+        Transportes.AutobusPasajeros autobusPrimeraPlus = new Transportes.AutobusPasajeros();
         autobusPrimeraPlus.Acelerar();
         autobusPrimeraPlus.usarTrasmision();
 
-        Elfo elfo1 = new Elfo();
+        EjercicioVideojuego.Elfo elfo1 = new EjercicioVideojuego.Elfo();
         elfo1.Mago();
+
+        PersonaEstatica.esteMetodoEsEstatico();
+        System.out.println(PersonaEstatica.nombrePersonaEstatica);
     }
+}
+
+class EjemploSegundaClase {
+    public String segundaClase = "";
 }
