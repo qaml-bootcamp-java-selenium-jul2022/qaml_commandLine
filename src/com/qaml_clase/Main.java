@@ -1,5 +1,7 @@
 package com.qaml_clase;
 
+import Transportes.TransporteAereo;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,9 +31,17 @@ public class Main {
 
         PersonaEstatica.esteMetodoEsEstatico();
         System.out.println(PersonaEstatica.nombrePersonaEstatica);
-    }
-}
 
-class EjemploSegundaClase {
-    public String segundaClase = "";
+        TransporteAereo transporteAereo = new TransporteAereo(2000) {
+            @Override
+            public void volar() {
+
+            }
+
+            @Override
+            public void Acelerar() {
+
+            }
+        };
+    }
 }

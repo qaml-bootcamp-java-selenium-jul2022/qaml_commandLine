@@ -5,4 +5,6 @@ public class PersonaEstatica {
     public static void esteMetodoEsEstatico() {
         System.out.println("Metodo estatico que no se tiene que instanciar.");
     }
+
+    public static String ejemploDeStatic = "Static string";
 }
