@@ -1,4 +1,4 @@
-package EjercicioVideojuego;
+package EjercicioVideojuegoJenny;
 
 public abstract class Personaje {
     public abstract void Arquero();

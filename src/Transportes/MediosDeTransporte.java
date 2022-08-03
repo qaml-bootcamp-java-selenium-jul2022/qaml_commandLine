@@ -1,11 +1,11 @@
 package Transportes;
 
 public abstract class MediosDeTransporte {
-    //Nombre, velocidad, kilometraje, tipo de transporte, capacidad de carga
-    private String nombre;
+    private String name;
     public Integer velocidad;
-    public Integer kilometraje;
+    public Integer Kilometraje;
     private Integer capacidadDeCarga;
+    //private String tipoDeTransporte;
 
-    public abstract void Acelerar();
+    abstract void Acelerar();
 }
