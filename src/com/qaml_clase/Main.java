@@ -1,5 +1,8 @@
 package com.qaml_clase;
 
+import EjercicioVideojuego.Elfo;
+import Transportes.AutobusPasajeros;
+import Zoologico.*;
 import Transportes.TransporteAereo;
 
 public class Main {
@@ -43,5 +46,18 @@ public class Main {
 
             }
         };
+        Animal leon = new Leon();
+        leon.comer();
+        Leon leon2 = new Leon();
+        leon2.mover();
+        Pavorreal pavorreal = new Pavorreal();
+        pavorreal.comer();
+        pavorreal.mover();
+        Delfin delfin = new Delfin();
+        delfin.comer();
+        delfin.mover();
+        SerpienteCascabel serpienteCascabel = new SerpienteCascabel();
+        serpienteCascabel.comer();
+        serpienteCascabel.mover();
     }
 }
