@@ -32,6 +32,8 @@ public class Main {
         EjercicioVideojuego.Elfo elfo1 = new EjercicioVideojuego.Elfo();
         elfo1.Mago();
 
+        // Ejercicio Zoologico
+
         PersonaEstatica.esteMetodoEsEstatico();
         System.out.println(PersonaEstatica.nombrePersonaEstatica);
 
@@ -59,5 +61,8 @@ public class Main {
         SerpienteCascabel serpienteCascabel = new SerpienteCascabel();
         serpienteCascabel.comer();
         serpienteCascabel.mover();
+
+
+
     }
 }
