@@ -1,16 +1,20 @@
 package Transportes;
 
-public class Autobus extends TransporteTerrestre {
-    public String Nombre = "Nombre";
+public class Autobus extends TransporteTerrestre{
+    public  String Nombre = "Autobus";
 
     @Override
     public void Acelerar() {
-        //El autobus utiliza un pedal
-        System.out.println("El autobus acelera usando un pedal");
+        System.out.println("El Autobus acelera usando un pedal");
     }
 
     @Override
-    public void usarTrasmision() {
-        System.out.println("El autobus utiliza trasmision manual");
+    public void frenadoDeMano() {
+        System.out.println("El Autobus frena usando un pedal");
+    }
+
+    @Override
+    public void usarTransmisionManual() {
+        System.out.println("El Autobus acelera usando transmision manual");
     }
 }

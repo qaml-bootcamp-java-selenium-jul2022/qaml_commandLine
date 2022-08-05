@@ -1,4 +1,4 @@
-package EjercicioVideojuego;
+package EjercicioVideojuegoJenny;
 
 public class Elfo extends Personaje {
     @Override
