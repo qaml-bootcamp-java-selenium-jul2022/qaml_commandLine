@@ -1,4 +1,4 @@
-package Zoologico;
+package EjercicioZoologico;
 
 public class Leon extends AnimalTerrestre{
 

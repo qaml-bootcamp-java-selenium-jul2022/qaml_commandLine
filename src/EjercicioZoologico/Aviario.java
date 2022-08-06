@@ -1,4 +1,4 @@
-package Zoologico;
+package EjercicioZoologico;
 
 public abstract class Aviario extends Animal{
     private Double longitudAlas;

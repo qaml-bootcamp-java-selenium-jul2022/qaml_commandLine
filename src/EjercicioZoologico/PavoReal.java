@@ -1,4 +1,4 @@
-package Zoologico;
+package EjercicioZoologico;
 
 public class PavoReal extends Aviario{
     @Override

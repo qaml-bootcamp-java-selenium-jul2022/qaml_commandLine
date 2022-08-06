@@ -1,4 +1,4 @@
-package Zoologico;
+package EjercicioZoologico;
 
 public abstract class Acuario extends Animal{
  protected Integer numeroAletas;

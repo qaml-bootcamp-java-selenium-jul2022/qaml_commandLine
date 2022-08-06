@@ -1,4 +1,4 @@
-package Zoologico;
+package EjercicioZoologico;
 
 public abstract class Reptilario extends Animal{
     private Integer numeroPatas=0;
