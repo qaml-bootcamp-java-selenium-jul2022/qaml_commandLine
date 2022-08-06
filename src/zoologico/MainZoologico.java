@@ -47,6 +47,6 @@ public class MainZoologico {
         System.out.println("La Serpiente es "+Python.getLargo()+" metros de larga");
         Python.Arrastrarse();
         Python.mudaDePiel();
-        
+
     }
 }
