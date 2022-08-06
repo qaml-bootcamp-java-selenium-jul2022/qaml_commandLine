@@ -31,6 +31,12 @@ public class MainEjerciciosStrings {
         System.out.println(
                 caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
         );
+
+        System.out.println(
+                caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual, '*')
+        );
+
+                System.out.println(determinadaIndiceEnCadena(resultadoActual, 'e'));
     }
 
     static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena) {
@@ -41,5 +47,23 @@ public class MainEjerciciosStrings {
             caracterEnIndice = cadena.charAt(indice);
         }
         return  caracterEnIndice;
+    }
+
+    static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena, char caracterRemplazoDeVacios) {
+        //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
+        char caracterEnIndice = ' ';
+        cadena = cadena.replace(' ', caracterRemplazoDeVacios);
+        if (indice < cadena.length()) {
+            //Paso 2: Asignar a la variable que retornamos el valor de charAt(indice)
+            caracterEnIndice = cadena.charAt(indice);
+
+        }
+        return  caracterEnIndice;
+    }
+    static int determinadaIndiceEnCadena (String cadena, char caracter) {
+        //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
+        int indiceDelCaracter = 0;
+            indiceDelCaracter = cadena.indexOf(caracter);
+        return  indiceDelCaracter;
     }
 }
