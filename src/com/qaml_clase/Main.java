@@ -62,7 +62,9 @@ public class Main {
         serpienteCascabel.comer();
         serpienteCascabel.mover();
 
-
+        Person alumno;
+        PersonaEstatica.esteMetodoEsEstatico();
+        System.out.println(PersonaEstatica.nombrePersonaEstatica);
 
     }
 }

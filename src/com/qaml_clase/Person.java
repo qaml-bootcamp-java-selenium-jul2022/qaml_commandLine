@@ -1,14 +1,27 @@
 package com.qaml_clase;
 
-public class Person {
+public class Person implements IPersona {
     //El atributo será encapsulado y necesita ser privado
     private String name = "Nombre default";
     private Double salarioMinimoMensual = 3500.89;
     private Double taxPorcentaje = 0.30;
+    private int idDePersona;
     public String Titulo = "Titulo test";
     public final String variableFinal = "Esta variable no se puede modificar porque es final";
 
     public Double BasicPay;
+
+    public Person (int id){
+        //Validacion del identificador en la base de datos
+        boolean valid = true;
+        if (valid) {
+            this.idDePersona = id;
+        }
+    }
+
+    public Person () {
+
+    }
 
     //Getter (método para obtener el valor de name)
     public String getName () {
@@ -50,5 +63,20 @@ public class Person {
     public void setSalarioMinimoMensual (Double salarioMinimoMensual) {
         System.out.println("Establecer desde fuera del objeto el valor de Salario Minimo Mensual");
         this.salarioMinimoMensual = salarioMinimoMensual;
+    }
+
+    @Override
+    public void interfazPrueba() {
+
+    }
+
+    @Override
+    public void segundoMetodo() {
+
+    }
+
+    @Override
+    public void tercero() {
+
     }
 }
