@@ -55,11 +55,5 @@ public class MainEjerciciosString {
 
     }
 
-    static int indiceDeDeterminadoCaracter (String cadena){
-        int posicion =-1;
-
-    }
-
-
 
 }

@@ -1,62 +1,31 @@
-package zoologico;
+package Zoologico;
 
- abstract class Acuario {
+public abstract class Acuario extends Animal{
+ protected Integer numeroAletas;
+ private Integer tiempoAguantaRespiracion;
+ private Double profundidad;
 
-  //private String type;
-  private String nombreanimal;
-  private String tipoanimal;
-  private double altura;
-  private double peso;
-  private String habitat = "Acuario";
 
-  public String getNombreanimal() {
-   return nombreanimal;
-  }
+ public abstract void setNumeroAletas();
 
-  public void setNombreanimal(String nombreanimal) {
-   this.nombreanimal = nombreanimal;
-  }
 
-  public String getTipoanimal() {
-   return tipoanimal;
-  }
+ public Integer getNumeroAletas() {
+  return numeroAletas;
+ }
 
-  public void setTipoanimal(String tipoanimal) {
-   this.tipoanimal = tipoanimal;
-  }
+ public Integer getTiempoAguantaRespiracion() {
+  return tiempoAguantaRespiracion;
+ }
 
-  public double getAltura() {
-   return altura;
-  }
+ public void setTiempoAguantaRespiracion(Integer tiempoAguantaRespiracion) {
+  this.tiempoAguantaRespiracion = tiempoAguantaRespiracion;
+ }
 
-  public void setAltura(double altura) {
-   this.altura = altura;
-  }
+ public Double getProfundidad() {
+  return profundidad;
+ }
 
-  public double getPeso() {
-   return peso;
-  }
-
-  public void setPeso(double peso) {
-   this.peso = peso;
-  }
-
-  public String getHabitat() {
-   return habitat;
-  }
-
-  public void infoHabitatAcuatico() {
-   System.out.println("Este habitat esta reservado para animales acuaticos");
-  }
-
-  public void TipoDeDesplazamiento(){
-   this.nombreanimal = getNombreanimal();
-   System.out.println("El " +nombreanimal+" nada para desplazarse");
-  }
-
-  public void TipoDeDieta() {
-   this.nombreanimal = getNombreanimal();
-   System.out.println("El "+nombreanimal+" es un animal carnivoro");
-  }
-
+ public void setProfundidad(Double profundidad) {
+  this.profundidad = profundidad;
+ }
 }
