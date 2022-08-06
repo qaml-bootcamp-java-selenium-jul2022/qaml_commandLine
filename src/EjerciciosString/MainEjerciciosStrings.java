@@ -29,7 +29,17 @@ public class MainEjerciciosStrings {
                         : "Las cadenas son iguales");
 
         System.out.println(
-                caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
+                "Caso negativo" + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
+        );
+
+        System.out.println(
+                "Caso negativo:"
+                        + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual, '*')
+        );
+
+        System.out.println(
+                "Caso positivo:"
+                        + caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual, '*')
         );
     }
 
@@ -39,6 +49,17 @@ public class MainEjerciciosStrings {
         if (indice < cadena.length()) {
             //Paso 2: Asignar a la variable que retornamos el valor de charAt(indice)
             caracterEnIndice = cadena.charAt(indice);
+        }
+        return  caracterEnIndice;
+    }
+
+    static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena, char caracterReemplazoDeVacios) {
+        //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
+        char caracterEnIndice = ' ';
+        //cadena = cadena.replace(' ', caracterReemplazoDeVacios);
+        if (indice < cadena.length()) {
+            //Paso 2: Asignar a la variable que retornamos el valor de charAt(indice)
+            caracterEnIndice = cadena.replace(' ', caracterReemplazoDeVacios).charAt(indice);
         }
         return  caracterEnIndice;
     }
