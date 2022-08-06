@@ -1,4 +1,4 @@
-package Videojuego;
+package TareaVideojuego;
 
 public class Humano extends Personaje{
     public Double altura=1.70;

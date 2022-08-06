@@ -1,4 +1,4 @@
-package Videojuego;
+package TareaVideojuego;
 
 public class Elfo extends Personaje{
     public Double altura=2.00;

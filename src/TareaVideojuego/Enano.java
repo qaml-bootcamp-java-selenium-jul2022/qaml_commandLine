@@ -1,4 +1,4 @@
-package Videojuego;
+package TareaVideojuego;
 
 public class Enano extends Personaje{
     public Double altura=1.00;

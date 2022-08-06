@@ -1,4 +1,4 @@
-package Videojuego;
+package TareaVideojuego;
 
 
 public abstract class Personaje {
