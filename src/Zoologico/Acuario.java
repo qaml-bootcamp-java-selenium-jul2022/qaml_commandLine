@@ -1,31 +1,62 @@
-package Zoologico;
+package zoologico;
 
-public abstract class Acuario extends Animal{
-    protected Integer numeroAletas;
-    private Integer tiempoAguantaRespiracion;
-    private Double profundidad;
+ abstract class Acuario {
 
+  //private String type;
+  private String nombreanimal;
+  private String tipoanimal;
+  private double altura;
+  private double peso;
+  private String habitat = "Acuario";
 
-    public abstract void setNumeroAletas();
+  public String getNombreanimal() {
+   return nombreanimal;
+  }
 
+  public void setNombreanimal(String nombreanimal) {
+   this.nombreanimal = nombreanimal;
+  }
 
-    public Integer getNumeroAletas() {
-        return numeroAletas;
-    }
+  public String getTipoanimal() {
+   return tipoanimal;
+  }
 
-    public Integer getTiempoAguantaRespiracion() {
-        return tiempoAguantaRespiracion;
-    }
+  public void setTipoanimal(String tipoanimal) {
+   this.tipoanimal = tipoanimal;
+  }
 
-    public void setTiempoAguantaRespiracion(Integer tiempoAguantaRespiracion) {
-        this.tiempoAguantaRespiracion = tiempoAguantaRespiracion;
-    }
+  public double getAltura() {
+   return altura;
+  }
 
-    public Double getProfundidad() {
-        return profundidad;
-    }
+  public void setAltura(double altura) {
+   this.altura = altura;
+  }
 
-    public void setProfundidad(Double profundidad) {
-        this.profundidad = profundidad;
-    }
+  public double getPeso() {
+   return peso;
+  }
+
+  public void setPeso(double peso) {
+   this.peso = peso;
+  }
+
+  public String getHabitat() {
+   return habitat;
+  }
+
+  public void infoHabitatAcuatico() {
+   System.out.println("Este habitat esta reservado para animales acuaticos");
+  }
+
+  public void TipoDeDesplazamiento(){
+   this.nombreanimal = getNombreanimal();
+   System.out.println("El " +nombreanimal+" nada para desplazarse");
+  }
+
+  public void TipoDeDieta() {
+   this.nombreanimal = getNombreanimal();
+   System.out.println("El "+nombreanimal+" es un animal carnivoro");
+  }
+
 }

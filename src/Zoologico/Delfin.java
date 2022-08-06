@@ -1,26 +1,9 @@
-package Zoologico;
+package zoologico;
 
-public class Delfin extends Acuario{
+public class Delfin extends Acuario {
 
-    @Override
-    public void sonidoAnimal() {
-        System.out.println("Delfin hace un chillido como sonido");
+    public Delfin(){
+        System.out.println("Has inicializado animal como delfin");
     }
 
-    @Override
-    public void setTipoDeAnimal() {
-        tipoDeAnimal="Delfin, es un Animal Acuatico";
-        System.out.println("Este animal es un "+tipoDeAnimal);
-    }
-
-    public void nadarProfundidad(){
-        System.out.println("El Delfin anda a la maxima profundidad de "+getProfundidad()+
-                " metros y aguanta la respiracion por "+getTiempoAguantaRespiracion()+" minutos");
-    }
-
-    @Override
-    public void setNumeroAletas() {
-        numeroAletas=3;
-        System.out.println("El Delfin tiene "+numeroAletas+" aletas");
-    }
 }

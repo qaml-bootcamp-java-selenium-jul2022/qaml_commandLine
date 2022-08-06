@@ -1,31 +1,61 @@
-package Zoologico;
+package zoologico;
 
-public abstract class Aviario extends Animal{
-    private Double longitudAlas;
-    private Double longitudCola;
-    private Boolean puedeVolar;
+public class Aviario {
 
-    public Double getLongitudAlas() {
-        return longitudAlas;
+    //private String type;
+    private String nombreanimal;
+    private String tipoanimal;
+    private double altura;
+    private double peso;
+    private String habitat = "Aviario";
+
+    public String getNombreanimal() {
+        return nombreanimal;
     }
 
-    public void setLongitudAlas(Double longitudAlas) {
-        this.longitudAlas = longitudAlas;
+    public void setNombreanimal(String nombreanimal) {
+        this.nombreanimal = nombreanimal;
     }
 
-    public Double getLongitudCola() {
-        return longitudCola;
+    public String getTipoanimal() {
+        return tipoanimal;
     }
 
-    public void setLongitudCola(Double longitudCola) {
-        this.longitudCola = longitudCola;
+    public void setTipoanimal(String tipoanimal) {
+        this.tipoanimal = tipoanimal;
     }
 
-    public Boolean getPuedeVolar() {
-        return puedeVolar;
+    public double getAltura() {
+        return altura;
     }
 
-    public void setPuedeVolar(Boolean puedeVolar) {
-        this.puedeVolar = puedeVolar;
+    public void setAltura(double altura) {
+        this.altura = altura;
     }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public void infoHabitatAviario() {
+        System.out.println("Este habitat esta reservado para avez voladoras y terrestres");
+    }
+    public void TipoDeDesplazamiento(){
+        this.nombreanimal = getNombreanimal();
+        System.out.println("El " +nombreanimal+" camina o corre con sus patas para desplazarse");
+    }
+
+    public void TipoDeDieta() {
+        this.nombreanimal = getNombreanimal();
+        System.out.println("El "+nombreanimal+" es un animal herbivoro");
+    }
+
 }
