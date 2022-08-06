@@ -28,8 +28,19 @@ public class MainEjerciciosStrings {
                         ? "Las cadenas son diferentes"
                         : "Las cadenas son iguales");
 
-        System.out.println("caso negativo:"+
-                caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
+
+        System.out.println(
+                "Caso negativo" + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
+        );
+
+        System.out.println(
+                "Caso negativo:"
+                        + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual, '*')
+        );
+
+        System.out.println(
+                "Caso positivo:"
+                        + caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual, '*')
         );
 
         System.out.println("Caso positivo:"+
@@ -55,6 +66,7 @@ public class MainEjerciciosStrings {
         }
         return  caracterEnIndice;
     }
+
 
     static int posicionDeDeterminadoCaracter (char caracter, String cadena){
         int posicion =-1;
