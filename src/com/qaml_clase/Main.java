@@ -1,11 +1,14 @@
 package com.qaml_clase;
 
-import Transportes.TransporteAereo;
+import TransportesJenny.*;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+        //TESTING PERSON IN COM.QAML_CLASS PACKAGE
+        System.out.println("\n-----------------EJERCICIO DE PERSON-------------------");
         final Person trabajadorSalarioMinimo = new Person();
         Person trabajadorOficinista = new Person();
 
@@ -20,18 +23,39 @@ public class Main {
         System.out.println(trabajadorOficinista.Salary());
         System.out.println(trabajadorSalarioMinimo.Salary());
 
-        //Ejercicios medios de transporte
 
-        Transportes.AutobusPasajeros autobusPrimeraPlus = new Transportes.AutobusPasajeros();
+        //EJERCICIOS DE TRANSPORTES
+        System.out.println("\n-----------------EJERCICIO DE TRANSPORTES - JENNY -------------------");
+        AutobusPasajeros autobusPrimeraPlus = new AutobusPasajeros();
         autobusPrimeraPlus.Acelerar();
         autobusPrimeraPlus.usarTrasmision();
 
-        EjercicioVideojuego.Elfo elfo1 = new EjercicioVideojuego.Elfo();
+        //EJERCICIO DE VIDEOJUEGOS - JENNY
+        System.out.println("\n-----------------EJERCICIO DE VIDEOJUEGO - JENNY -------------------");
+        EjercicioVideojuegoJenny.Elfo elfo1 = new EjercicioVideojuegoJenny.Elfo();
         elfo1.Mago();
+
+
+        //EJERCICIO CLASE ESTATICA -  MODIFICADORES DE ACCESO
+        System.out.println("\n-----------------EJERCICIO DE CLASE ESTATICA-------------------");
 
         Person alumno;
         PersonaEstatica.esteMetodoEsEstatico();
         System.out.println(PersonaEstatica.nombrePersonaEstatica);
+
+
+        //EJERCICIO DE TRANSPORTES de Jenny
+        /*TransporteAereo transporteAereo = new TransporteAereo(2000) {
+            @Override
+            public void volar() {
+
+            }
+
+            @Override
+            public void Acelerar() {
+
+            }
+        };*/
 
     }
 }

@@ -1,7 +1,11 @@
 package Transportes;
 
-public abstract class TransporteTerrestre extends MediosDeTransporte {
-    public Integer kilometraje;
+public abstract class TransporteTerrestre extends MediosDeTransporte{
+    public String tipoDeGasolina;
+    public Integer tamanoDeLlantas;
+    private Integer Kilometraje;
 
-    public abstract void usarTrasmision();
+    abstract void frenadoDeMano();
+
+    abstract void usarTransmisionManual();
 }

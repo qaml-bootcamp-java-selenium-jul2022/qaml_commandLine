@@ -1,69 +1,52 @@
-package zoologico;
+package Zoologico;
 
 public class MainZoologico {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        //EJERCICIOS DE ZOOLOGICO
+        System.out.println("\n-----------------EJERCICIO DE ZOOLOGICO-------------------");
+        Leon Leoncio = new Leon();
+        Leoncio.setNombre("El Leon se llama Leoncio");
+        System.out.println(Leoncio.getNombre());
+        Leoncio.setSexo("Masculino");
+        Leoncio.getEdad(5);
+        Leoncio.setTipoDeAnimal();
+        Leoncio.setNumeroPatas();
+        Leoncio.setEsCarnivoro();
+        Leoncio.sonidoAnimal();
+        Leoncio.Atacar();
 
-        HabitatTerrestre leon = new Leon();
-        leon.setNombreanimal("Leon");
-        System.out.println(leon.getNombreanimal());
-        leon.setTipoanimal("Animal Terrestre");
-        System.out.println(leon.getHabitat());
-        System.out.println(leon.getTipoanimal());
-        leon.setAltura(2.1);
-        System.out.println(leon.getAltura()+" mts");
-        leon.setPeso(200.23);
-        System.out.println(leon.getPeso()+" kgs");
-        leon.infoHabitatTerrestre();
-        leon.TipoDeDesplazamiento();
-        leon.TipoDeDieta();
-        System.out.println("");
+        Delfin Delfy = new Delfin();
+        Delfy.setNombre("El Delfin se llama Delfy");
+        System.out.println(Delfy.getNombre());
+        Delfy.setSexo("Femenino");
+        Delfy.setTipoDeAnimal();
+        Delfy.setNumeroAletas();
+        Delfy.setProfundidad(105.5);
+        Delfy.setTiempoAguantaRespiracion(30);
+        Delfy.sonidoAnimal();
+        Delfy.nadarProfundidad();
 
-        Acuario delfin = new Delfin();
-        delfin.setNombreanimal("Delfin");
-        System.out.println(delfin.getNombreanimal());
-        delfin.setTipoanimal("Animal Acuatico");
-        System.out.println(delfin.getHabitat());
-        System.out.println(delfin.getTipoanimal());
-        delfin.setAltura(1.1);
-        System.out.println(delfin.getAltura()+" mts");
-        delfin.setPeso(100.50);
-        System.out.println(delfin.getPeso()+" kgs");
-        delfin.infoHabitatAcuatico();
-        delfin.TipoDeDesplazamiento();
-        delfin.TipoDeDieta();
-        System.out.println("");
+        PavoReal Rey = new PavoReal();
+        Rey.setNombre("El Pavo Real se llama Rey");
+        System.out.println(Rey.getNombre());
+        Rey.setTipoDeAnimal();
+        Rey.setLongitudAlas(0.5);
+        Rey.setLongitudCola(1.5);
+        System.out.println("El pavo real tiene alas de "+Rey.getLongitudAlas()+" metros, y cola de "+
+                Rey.getLongitudCola()+" metros");
+        Rey.sonidoAnimal();
+        Rey.mostarSuCola();
 
-        Reptilario serpiente = new SerpienteCascabel();
-        serpiente.setNombreanimal("Serpiente de Cascabel");
-        System.out.println(serpiente.getNombreanimal());
-        serpiente.setTipoanimal("Reptil");
-        System.out.println(serpiente.getHabitat());
-        System.out.println(serpiente.getTipoanimal());
-        serpiente.setAltura(30);
-        System.out.println(serpiente.getAltura()+" cms");
-        serpiente.setPeso(40);
-        System.out.println(serpiente.getPeso()+" kgs");
-        serpiente.infoHabitatReptil();
-        serpiente.TipoDeDesplazamiento();
-        serpiente.TipoDeDieta();
-        System.out.println("");
-
-        Aviario pavorreal = new Pavorreal();
-        pavorreal.setNombreanimal("Pavorreal");
-        System.out.println(pavorreal.getNombreanimal());
-        pavorreal.setTipoanimal("Ave");
-        System.out.println(pavorreal.getHabitat());
-        System.out.println(pavorreal.getTipoanimal());
-        pavorreal.setAltura(30);
-        System.out.println(pavorreal.getAltura()+" cms");
-        pavorreal.setPeso(40);
-        System.out.println(pavorreal.getPeso()+" kgs");
-        pavorreal.infoHabitatAviario();
-        pavorreal.TipoDeDesplazamiento();
-        pavorreal.TipoDeDieta();
-
+        SerpienteDeCascabel Python = new SerpienteDeCascabel();
+        Python.setNombre("La serpiente de Cascabel se llama Python");
+        System.out.println(Python.getNombre());
+        Python.setTipoDeAnimal();
+        System.out.println("La Serpiente tiene "+Python.getNumeroPatas()+" patas");
+        Python.setLargo(7.3);
+        System.out.println("La Serpiente es "+Python.getLargo()+" metros de larga");
+        Python.Arrastrarse();
+        Python.mudaDePiel();
 
     }
-
 }
