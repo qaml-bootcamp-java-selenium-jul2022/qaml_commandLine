@@ -29,19 +29,9 @@ public class Main {
         EjercicioVideojuego.Elfo elfo1 = new EjercicioVideojuego.Elfo();
         elfo1.Mago();
 
+        Person alumno;
         PersonaEstatica.esteMetodoEsEstatico();
         System.out.println(PersonaEstatica.nombrePersonaEstatica);
 
-        TransporteAereo transporteAereo = new TransporteAereo(2000) {
-            @Override
-            public void volar() {
-
-            }
-
-            @Override
-            public void Acelerar() {
-
-            }
-        };
     }
 }
