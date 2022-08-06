@@ -35,11 +35,14 @@ public class Main {
         EjercicioVideojuegoJenny.Elfo elfo1 = new EjercicioVideojuegoJenny.Elfo();
         elfo1.Mago();
 
+
         //EJERCICIO CLASE ESTATICA -  MODIFICADORES DE ACCESO
         System.out.println("\n-----------------EJERCICIO DE CLASE ESTATICA-------------------");
+
         Person alumno;
         PersonaEstatica.esteMetodoEsEstatico();
         System.out.println(PersonaEstatica.nombrePersonaEstatica);
+
 
         //EJERCICIO DE TRANSPORTES de Jenny
         /*TransporteAereo transporteAereo = new TransporteAereo(2000) {
@@ -53,6 +56,6 @@ public class Main {
 
             }
         };*/
-
+        
     }
 }
