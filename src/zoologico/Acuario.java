@@ -1,62 +1,28 @@
-package zoologico;
+package Zoologico;
 
- abstract class Acuario {
+public abstract class Acuario extends Animal {
 
-  //private String type;
-  private String nombreanimal;
-  private String tipoanimal;
-  private double altura;
-  private double peso;
-  private String habitat = "Acuario";
+    private Integer cantidadAletas;
+    private String profundidadMaxima;
 
-  public String getNombreanimal() {
-   return nombreanimal;
-  }
+    public String getProfundidadMaxima() {
+        System.out.println("Este animal se puede sumergir hasta: " + this.profundidadMaxima);
+        return this.profundidadMaxima;
+    }
 
-  public void setNombreanimal(String nombreanimal) {
-   this.nombreanimal = nombreanimal;
-  }
+    public void setProfundidadMaxima(String profundidadMaxima) {
+        this.profundidadMaxima = profundidadMaxima;
+    }
 
-  public String getTipoanimal() {
-   return tipoanimal;
-  }
 
-  public void setTipoanimal(String tipoanimal) {
-   this.tipoanimal = tipoanimal;
-  }
 
-  public double getAltura() {
-   return altura;
-  }
+    public Integer getCantidadAletas() {
+        System.out.println("Numero de Aletas: " + this.cantidadAletas);
+        return this.cantidadAletas;
+    }
 
-  public void setAltura(double altura) {
-   this.altura = altura;
-  }
-
-  public double getPeso() {
-   return peso;
-  }
-
-  public void setPeso(double peso) {
-   this.peso = peso;
-  }
-
-  public String getHabitat() {
-   return habitat;
-  }
-
-  public void infoHabitatAcuatico() {
-   System.out.println("Este habitat esta reservado para animales acuaticos");
-  }
-
-  public void TipoDeDesplazamiento(){
-   this.nombreanimal = getNombreanimal();
-   System.out.println("El " +nombreanimal+" nada para desplazarse");
-  }
-
-  public void TipoDeDieta() {
-   this.nombreanimal = getNombreanimal();
-   System.out.println("El "+nombreanimal+" es un animal carnivoro");
-  }
+    public void setCantidadAletas(Integer cantidadAletas) {
+        this.cantidadAletas = cantidadAletas;
+    }
 
 }

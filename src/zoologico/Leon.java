@@ -1,9 +1,15 @@
-package zoologico;
+package Zoologico;
 
-class Leon extends HabitatTerrestre {
+public class Leon extends AnimalTerrestre{
 
-    public Leon(){
-        System.out.println("Has inicializado animal como leon");
+    @Override
+    public void SonidoAnimal(){
+        System.out.println("El León produce un rugido como sonido.");
     }
 
- }
+    @Override
+    public void AccionDelAnimal() {
+        System.out.println("El León puede cazar.");
+    }
+
+}
