@@ -3,7 +3,7 @@ package EjerciciosString;
 public class MainEjerciciosStrings {
 
     public static void main(String[] args) {
-        char [] arregloDeChars = new char[] {'H','o','l','a'};
+        char[] arregloDeChars = new char[]{'H', 'o', 'l', 'a'};
 
         String str1 = new String(arregloDeChars);
         String str2 = new String("Hola");
@@ -41,19 +41,24 @@ public class MainEjerciciosStrings {
                 "Caso positivo:"
                         + caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual, '*')
         );
+
+        System.out.println("Resultado metodo reemplaza: " + metodoReemplaza("testa", "test"));
+
+        System.out.println("Resultado metodo startswith-endswith: "+ metodoBooleano("CadenaTest","Test"));
+
     }
 
-    static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena) {
+    static char caracterEnDeterminadoIndiceDeLaCadena(int indice, String cadena) {
         //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
         char caracterEnIndice = '"';
         if (indice < cadena.length()) {
             //Paso 2: Asignar a la variable que retornamos el valor de charAt(indice)
             caracterEnIndice = cadena.charAt(indice);
         }
-        return  caracterEnIndice;
+        return caracterEnIndice;
     }
 
-    static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena, char caracterReemplazoDeVacios) {
+    static char caracterEnDeterminadoIndiceDeLaCadena(int indice, String cadena, char caracterReemplazoDeVacios) {
         //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
         char caracterEnIndice = ' ';
         //cadena = cadena.replace(' ', caracterReemplazoDeVacios);
@@ -61,6 +66,30 @@ public class MainEjerciciosStrings {
             //Paso 2: Asignar a la variable que retornamos el valor de charAt(indice)
             caracterEnIndice = cadena.replace(' ', caracterReemplazoDeVacios).charAt(indice);
         }
-        return  caracterEnIndice;
+        return caracterEnIndice;
+    }
+
+    static String metodoReemplaza(String cadena1, String cadenaReemplazo) {
+        String cadenaNueva = null;
+        if (!cadena1.equals(cadenaReemplazo)) {
+            if (cadena1 != "") {
+                cadenaNueva = cadena1;
+                cadenaNueva = cadenaNueva.replace(cadena1, cadenaReemplazo);
+            }
+        }
+
+        return cadenaNueva;
+    }
+
+    static boolean metodoBooleano(String cadena1, String cadena2){
+        //boolean resultado = false;
+
+        //resultado = (cadena1.startsWith(cadena2)|| cadena1.endsWith(cadena2));
+
+
+        return (cadena1.startsWith(cadena2) || cadena1.endsWith(cadena2))?
+                true
+                :
+                false;
     }
 }
