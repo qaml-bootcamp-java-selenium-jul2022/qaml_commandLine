@@ -24,9 +24,9 @@ public class MainEjerciciosStrings {
 
         System.out.println(resultadoEsperado.equals(resultadoActual));
         System.out.println(
-                resultadoEsperado.compareTo(resultadoActual) != 0
-                        ? "Las cadenas son diferentes"
-                        : "Las cadenas son iguales");
+                resultadoEsperado.compareTo(resultadoActual) != 0 //Sentencia a evaluar
+                        ? "Las cadenas son diferentes" //Si es true
+                        : "Las cadenas son iguales"); //Si es false
 
         System.out.println(
                 "Caso negativo" + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
