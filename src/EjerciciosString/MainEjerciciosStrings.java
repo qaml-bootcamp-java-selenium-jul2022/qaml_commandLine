@@ -24,9 +24,10 @@ public class MainEjerciciosStrings {
 
         System.out.println(resultadoEsperado.equals(resultadoActual));
         System.out.println(
-                resultadoEsperado.compareTo(resultadoActual) != 0
-                        ? "Las cadenas son diferentes"
-                        : "Las cadenas son iguales");
+                resultadoEsperado.compareTo(resultadoActual) != 0 //Sentencia a evaluar
+                        ? "Las cadenas son diferentes" //Si es true
+                        : "Las cadenas son iguales"); //Si es false
+
 
         System.out.println(
                 "Caso negativo" + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
@@ -46,9 +47,24 @@ public class MainEjerciciosStrings {
 
         );
 
+
         System.out.println(insertarCharsEnCadena("HELLO ---", 'A', 6));
 
         System.out.println(armarCaracter("Luis Gerardo", "Muñoz", "Ortega", "Mexico", 32));
+
+
+        System.out.println("Caso positivo:"+
+                posicionDeDeterminadoCaracter('e',resultadoEsperado));//E->0,e->2,a->-1
+        System.out.println("caso negativo:"+
+                posicionDeDeterminadoCaracter('a',resultadoEsperado));//E->0,e->2,a->-1
+
+        System.out.println("caso negativo:"+
+                caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual,'*')
+        );
+
+        System.out.println("Caso positivo:"+
+                caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual,'*')
+        );
 
     }
 
@@ -62,13 +78,21 @@ public class MainEjerciciosStrings {
         return  caracterEnIndice;
     }
 
+
+    static int posicionDeDeterminadoCaracter (char caracter, String cadena){
+        int posicion =-1;
+        posicion=cadena.indexOf(caracter);
+        return posicion;
+    }
+
     static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena, char caracterReemplazoDeVacios) {
         //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
         char caracterEnIndice = ' ';
-        //cadena = cadena.replace(' ', caracterReemplazoDeVacios);
+        cadena = cadena.replace(' ', caracterReemplazoDeVacios);
+        //System.out.println(cadena);
         if (indice < cadena.length()) {
             //Paso 2: Asignar a la variable que retornamos el valor de charAt(indice)
-            caracterEnIndice = cadena.replace(' ', caracterReemplazoDeVacios).charAt(indice);
+            caracterEnIndice = cadena.charAt(indice);
         }
         return  caracterEnIndice;
 
@@ -95,4 +119,5 @@ public class MainEjerciciosStrings {
         String resultado = armado.toString();
         return resultado;
     }
+
 }
