@@ -48,5 +48,15 @@ public class MainZoologico {
         Python.Arrastrarse();
         Python.mudaDePiel();
 
+        //EJERCICIOS DE EQUALS AND TOSTRING
+        System.out.println("\n-----------------EJERCICIO DE AVESTRUZ - EQUALS AND TOSTRING-------------------");
+        //Avestruz Hortencia = new Avestruz("Emú","Ñandú");
+        Avestruz Hortencia = new Avestruz("Emu","Nandu");
+        Hortencia.setNombre("Hortencia");
+        System.out.println(Python.getNombre());
+        System.out.println(Hortencia.toString());
+        System.out.println(Hortencia.equals(Hortencia.nombreAvestrus2)
+                ? "Las propiedades recibidas del Avestruz son iguales"
+                : "Las propiedades del Avestruz son diferentes");
     }
 }

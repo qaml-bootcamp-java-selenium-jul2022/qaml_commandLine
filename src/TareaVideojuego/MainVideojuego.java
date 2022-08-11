@@ -22,5 +22,13 @@ public class MainVideojuego {
         humano1.Desplazarse();
         humano1.Guerrero();
         humano1.Arquero();
+
+        //EJERCICIOS DE VIDEOJUEGOS
+        System.out.println("\n-----------------EJERCICIO DE VIDEOJUEGOS -  ToString and Equals-------------------");
+        Elfo elfoTutora = new Elfo("Jenny");
+        System.out.println(elfoTutora.toString());
+
+        System.out.println(elfoTutora.equals("Alex"));
+
     }
 }

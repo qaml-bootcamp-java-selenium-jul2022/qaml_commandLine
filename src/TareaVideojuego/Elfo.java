@@ -7,6 +7,14 @@ public class Elfo extends Personaje{
         System.out.println("Se crea de personaje Elfo");
     }
 
+    public Elfo(String nombreElfo){
+        this.name=nombreElfo;
+    }
+
+    public Elfo(String nombreElfo, String nombrePregunta){
+        this.name=nombreElfo;
+    }
+
     public void Meditar(){
         System.out.println("Elfo se dedica a meditar");
     }
@@ -35,5 +43,15 @@ public class Elfo extends Personaje{
     @Override
     public void Mago() {
         System.out.println("Elfo siempre es Mago");
+    }
+
+    @Override
+    public String toString(){
+        return  "El nombre de Elfo es: "+this.name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.name.equals(obj);
     }
 }
