@@ -55,6 +55,10 @@ public class MainEjerciciosStrings {
         System.out.println("Caso positivo:"+
                 caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual,'*')
         );
+        //Ejemplo StringBuilder
+        System.out.println(
+                insertarCharEnCadena("Hola mundo", '*', 6)
+        );
     }
 
     static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena) {
@@ -86,4 +90,14 @@ public class MainEjerciciosStrings {
         return  caracterEnIndice;
     }
 
+    static String insertarCharEnCadena (String cadena, char caracterAInsertar, int posicion) {
+        System.out.println("El tamaño de la cadena ANTES de la insercion: " + cadena.length());
+        StringBuilder constructorDeCadena = new StringBuilder(cadena);
+        constructorDeCadena.insert(posicion, caracterAInsertar);
+        System.out.println("El tamaño de la cadena DESPUÉS de la inserción: " + constructorDeCadena.length());
+        return constructorDeCadena.toString();
+    }
+
 }
+
+
