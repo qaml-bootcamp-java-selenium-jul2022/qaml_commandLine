@@ -46,6 +46,15 @@ public class MainEjerciciosStrings {
 
         System.out.println("Resultado metodo startswith-endswith: "+ metodoBooleano("CadenaTest","Test"));
 
+        //Ejemplo String Builder
+
+        System.out.println(
+                insertarCharEnCadena("Hola mundo",'*', 6)
+        );
+
+        System.out.println(
+                informacionUsuario("Alvaro","Meraz",28,"Mexicano")
+        );
     }
 
     static char caracterEnDeterminadoIndiceDeLaCadena(int indice, String cadena) {
@@ -91,5 +100,26 @@ public class MainEjerciciosStrings {
                 true
                 :
                 false;
+    }
+    static String insertarCharEnCadena(String cadena, char caracterAInsertar, int posicion){
+        System.out.println("El tamaño de la cadena ANTES de la insercion: "+ cadena.length());
+        StringBuilder constructorDeCadena = new StringBuilder(cadena);
+        constructorDeCadena.insert(posicion,caracterAInsertar);
+        System.out.println("El tamaño de la cadena DESPUES de la insercion: " + constructorDeCadena.length());
+        return constructorDeCadena.toString();
+    }
+
+    static String informacionUsuario(String nombre, String apellidoPaterno, int edad, String Nacionalidad){
+        StringBuilder persona = new StringBuilder();
+        System.out.println("Tamaño de la cadena ANTES de usar append(): " + persona.length());
+        persona.append("Me llamo ");
+        persona.append(nombre + " ");
+        persona.append(apellidoPaterno);
+        persona.append(", tengo ");
+        persona.append(edad);
+        persona.append(" años y soy ");
+        persona.append(Nacionalidad);
+        System.out.println("Tamaño de la cadena DESPUES de usar append(): " + persona.length());
+        return persona.toString();
     }
 }
