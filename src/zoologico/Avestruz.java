@@ -1,11 +1,11 @@
 package zoologico;
 
-class Avestruz extends HabitatTerrestre{
+class Avestruz extends HabitatTerrestre {
 
     private String nombre = "Sin nombre";
     private String origen = "Sin origen";
-    public Avestruz(String nombre, String origen)
-    {
+
+    public Avestruz(String nombre, String origen) {
         this.nombre = nombre;
         this.origen = origen;
 
@@ -17,17 +17,17 @@ class Avestruz extends HabitatTerrestre{
         return "Haz instanciado a un Aveztruz " + "\nSu nombre es: " + this.nombre + "\nY es de origen :" + this.origen;
     }
 
-    public boolean equals (String nombre, String origen) {
+    @Override
+    public boolean equals (Object obj) {
+        Avestruz a = (Avestruz) obj;
+        boolean res = (nombre == a.nombre) && (origen == a.origen);
+        if (res == true){
+            System.out.println("Las propiedades del aveztruz son iguales");
+        }
+        else
+            System.out.println("Las propiedades del aveztruz  NO son iguales");
 
-        ((nombre.compareTo(nombre)) && (origen.compareTo(origen))) != 0
-                ? "Las cadenas son diferentes" //Si es true
-                : "Las cadenas son iguales"); //Si es false
-
-
-
-    return
-            this.nombre.equals(nombre);
-
-
+        return res;
+        //return nombre.equals(nombre);
     }
 }
