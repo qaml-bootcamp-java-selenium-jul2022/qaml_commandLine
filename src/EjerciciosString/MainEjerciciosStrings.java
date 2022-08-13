@@ -33,15 +33,6 @@ public class MainEjerciciosStrings {
                 "Caso negativo" + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual)
         );
 
-        System.out.println(
-                "Caso negativo:"
-                        + caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual, '*')
-        );
-
-        System.out.println(
-                "Caso positivo:"
-                        + caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual, '*')
-        );
 
         System.out.println("Caso positivo:"+
                 posicionDeDeterminadoCaracter('e',resultadoEsperado));//E->0,e->2,a->-1
@@ -49,11 +40,11 @@ public class MainEjerciciosStrings {
                 posicionDeDeterminadoCaracter('a',resultadoEsperado));//E->0,e->2,a->-1
 
         System.out.println("caso negativo:"+
-                caracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual,'*')
+                reemplazarCaracterEnDeterminadoIndiceDeLaCadena(50, resultadoActual,'*')
         );
 
         System.out.println("Caso positivo:"+
-                caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual,'*')
+                reemplazarCaracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual,'*')
         );
         //Ejemplo StringBuilder
         System.out.println(
@@ -78,7 +69,7 @@ public class MainEjerciciosStrings {
         return posicion;
     }
 
-    static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena, char caracterReemplazoDeVacios) {
+    static char reemplazarCaracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena, char caracterReemplazoDeVacios) {
         //Paso 1: Validar que el índice se encuentre dentro del tamaño de la cadena
         char caracterEnIndice = ' ';
         cadena = cadena.replace(' ', caracterReemplazoDeVacios);

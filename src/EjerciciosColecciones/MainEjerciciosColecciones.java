@@ -52,5 +52,18 @@ public class MainEjerciciosColecciones {
         for (int i = 0; i < listaDeCadenas.size(); i++) {
             System.out.println(listaDeCadenas.get(i));
         }
+
+        System.out.println(nombreEscuela(Nombres.SUSY_UNIVERSIDAD));
+    }
+
+    public static String nombreEscuela (Nombres nombres) {
+        Map <Nombres, String> mapaEscuelas = new TreeMap<>();
+        mapaEscuelas.put(Nombres.SUSY_PRIMARIA, "Escuela Centenario");
+        mapaEscuelas.put(Nombres.JENNY_PREPARATORIA, "Panamericano");
+        mapaEscuelas.put(Nombres.SUSY_SECUNDARIA, "Jesus Romero Flores");
+        mapaEscuelas.put(Nombres.SUSY_PREPARATORIA, "CETIS 100");
+        mapaEscuelas.put(Nombres.SUSY_UNIVERSIDAD, "Universidad Cuauhtémoc");
+
+        return mapaEscuelas.get(nombres);
     }
 }
