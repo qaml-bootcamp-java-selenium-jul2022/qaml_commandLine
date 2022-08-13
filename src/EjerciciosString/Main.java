@@ -35,8 +35,8 @@ public class Main {
 
         System.out.println(indiceDeDeterminadoCaracter(resultadoActual,'e'));
 
-        System.out.println("Caso negativo: " + caracterEnDeterminadoIndiceDeLaCadena(50,resultadoActual,'*'));
-        System.out.println("Caso positivo: " + caracterEnDeterminadoIndiceDeLaCadena(9,resultadoActual,'*'));
+        System.out.println("Caso negativo: " + reemplazarCaracterEnDeterminadoIndiceDeLaCadena(50,resultadoActual,'*'));
+        System.out.println("Caso positivo: " + reemplazarCaracterEnDeterminadoIndiceDeLaCadena(9,resultadoActual,'*'));
 
     }
     static char caracterEnDeterminadoIndiceDeLaCadena(int indice, String cadena){
@@ -48,7 +48,7 @@ public class Main {
         }
         return caracterEnIndice;
     }
-    static char caracterEnDeterminadoIndiceDeLaCadena(int indice, String cadena, char caracterReemplazoDeVacios){
+    static char reemplazarCaracterEnDeterminadoIndiceDeLaCadena(int indice, String cadena, char caracterReemplazoDeVacios){
         //Paso1: validar que el indice se encuentre dentro del tamaño de la cadena
         char caracterEnIndice = ' ';
         cadena = cadena.replace(' ',caracterReemplazoDeVacios);
