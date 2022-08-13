@@ -63,6 +63,13 @@ public class MainZoologico {
         pavorreal.TipoDeDesplazamiento();
         pavorreal.TipoDeDieta();
 
+        // TAREA  OVERRIDING EQUALS y TO STRING
+        System.out.println("TAREA OVERRIDING MONSSE ---------------------------");
+        HabitatTerrestre avestruzMacho = new Avestruz("Emmanuel", "Verde");
+        HabitatTerrestre avestruzEmbra = new Avestruz("Caterina", "Rosa");
+        System.out.println(avestruzMacho.toString());
+        System.out.println(avestruzEmbra.toString());
+        System.out.println(avestruzMacho.equals(avestruzEmbra));
 
     }
 
