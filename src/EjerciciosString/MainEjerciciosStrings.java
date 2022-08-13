@@ -41,7 +41,17 @@ public class MainEjerciciosStrings {
         System.out.println(
                 "Caso positivo:"
                         + caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual, '*')
+
+
+
+
         );
+
+
+        System.out.println(insertarCharsEnCadena("HELLO ---", 'A', 6));
+
+        System.out.println(armarCaracter("Luis Gerardo", "Muñoz", "Ortega", "Mexico", 32));
+
 
         System.out.println("Caso positivo:"+
                 posicionDeDeterminadoCaracter('e',resultadoEsperado));//E->0,e->2,a->-1
@@ -55,10 +65,12 @@ public class MainEjerciciosStrings {
         System.out.println("Caso positivo:"+
                 caracterEnDeterminadoIndiceDeLaCadena(9, resultadoActual,'*')
         );
+
         //Ejemplo StringBuilder
         System.out.println(
                 insertarCharEnCadena("Hola mundo", '*', 6)
         );
+
     }
 
     static char caracterEnDeterminadoIndiceDeLaCadena (int indice, String cadena) {
@@ -88,6 +100,29 @@ public class MainEjerciciosStrings {
             caracterEnIndice = cadena.charAt(indice);
         }
         return  caracterEnIndice;
+
+    }
+    static String insertarCharsEnCadena (String cadena, char caracterAInsertar, int posicion) {
+        StringBuilder constructordeCadena = new StringBuilder(cadena);
+        constructordeCadena.insert(posicion, caracterAInsertar);
+        return constructordeCadena.toString();
+    }
+
+    static String armarCaracter (String nombre, String apaterno, String amaterno, String nacionalidad, int edad) {
+        StringBuilder armado = new StringBuilder();
+        armado.append("Me llamo ");
+        armado.append(nombre);
+        armado.append(" ");
+        armado.append(apaterno);
+        armado.append(" ");
+        armado.append(amaterno);
+        armado.append(", tengo ");
+        armado.append(edad);
+        armado.append(" años y soy de ");
+        armado.append(nacionalidad);
+        System.out.println(armado);
+        String resultado = armado.toString();
+        return resultado;
     }
 
     static String insertarCharEnCadena (String cadena, char caracterAInsertar, int posicion) {
