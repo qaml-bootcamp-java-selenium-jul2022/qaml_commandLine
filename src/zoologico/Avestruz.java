@@ -28,6 +28,5 @@ class Avestruz extends HabitatTerrestre {
             System.out.println("Las propiedades del aveztruz  NO son iguales");
 
         return res;
-        //return nombre.equals(nombre);
     }
 }
