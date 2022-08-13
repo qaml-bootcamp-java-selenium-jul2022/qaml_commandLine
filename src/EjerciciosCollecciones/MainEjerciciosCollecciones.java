@@ -64,8 +64,22 @@ public class MainEjerciciosCollecciones {
             System.out.println(listaDeCadenas.get(i));
         }
 
-        //Ejercicio DE COLLECCION - Array
-        System.out.println("\n-----------------EJERCICIO DE COLLECCION - Array-------------------");
+        //Ejercicio DE COLLECCION - Enum and TreeMap
+        System.out.println("\n-----------------EJERCICIO DE COLLECCION - Enum and TreeMap-------------------");
+        System.out.println("Susy Estudio la Preparatoria en: "+nombreEscuela(Nombres.SUSY_PRAPARATORIA));
+        System.out.println("Judy Estudio la Preparatoria en: "+nombreEscuela(Nombres.JUDY_PRAPARATORIA));
+}
 
+    public static String nombreEscuela (Nombres nombres){
+        Map<Nombres, String> mapaEscuelas = new TreeMap<>();
+        mapaEscuelas.put(Nombres.SUSY_PRIMARIA,"Escuela Centenario");
+        mapaEscuelas.put(Nombres.SUSY_SECUNDARIA,"Jesus Romero Flores");
+        mapaEscuelas.put(Nombres.SUSY_PRAPARATORIA,"CETIS 100");
+        mapaEscuelas.put(Nombres.SUSY_UNIVERSIDAD,"Universidad Cuahutemoc");
+        mapaEscuelas.put(Nombres.JUDY_PRIMARIA,"Primo Verdad");
+        mapaEscuelas.put(Nombres.JUDY_SECUNDARIA,"Sec Gral No 3. Congreso de Anahuac");
+        mapaEscuelas.put(Nombres.JUDY_PRAPARATORIA,"CBTIS 168");
+        mapaEscuelas.put(Nombres.JUDY_UNIVERSIDAD,"Universidad Autonoma de Aguascalientes");
+        return mapaEscuelas.get(nombres);
     }
 }

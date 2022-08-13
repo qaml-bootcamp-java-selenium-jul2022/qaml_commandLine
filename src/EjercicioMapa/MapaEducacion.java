@@ -1,5 +1,7 @@
 package EjercicioMapa;
 
+import EjerciciosCollecciones.MainEjerciciosCollecciones;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,6 +26,5 @@ public class MapaEducacion {
         mapa.put("Primaria Judy","Primo Verdad");
         return  mapa;
     }
-
 
 }
