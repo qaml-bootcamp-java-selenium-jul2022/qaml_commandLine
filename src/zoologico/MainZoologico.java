@@ -4,7 +4,7 @@ public class MainZoologico {
 
     public static void main(String[] args){
 
-        HabitatTerrestre leon = new Leon();
+        /*HabitatTerrestre leon = new Leon();
         leon.setNombreanimal("Leon");
         System.out.println(leon.getNombreanimal());
         leon.setTipoanimal("Animal Terrestre");
@@ -61,9 +61,17 @@ public class MainZoologico {
         System.out.println(pavorreal.getPeso()+" kgs");
         pavorreal.infoHabitatAviario();
         pavorreal.TipoDeDesplazamiento();
-        pavorreal.TipoDeDieta();
+        pavorreal.TipoDeDieta();*/
 
+        Avestruz avestruz1 = new Avestruz("Soy un avestruz", "Soy un avestruz");
+        System.out.println(avestruz1);
 
+        System.out.println(
+                avestruz1.equals(avestruz1.cadena2) ?
+                        "Las propiedades recibidas del Avestruz son iguales"
+                        :
+                        "Las propiedades del Avestruz son diferentes"
+                );
     }
 
 }
