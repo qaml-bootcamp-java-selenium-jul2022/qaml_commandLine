@@ -63,7 +63,25 @@ public class MainZoologico {
         pavorreal.TipoDeDesplazamiento();
         pavorreal.TipoDeDieta();
 
+        //EJERCICIOS DE EQUALS AND TOSTRING
+        System.out.println("\n-----------------EJERCICIO DE AVESTRUZ - EQUALS AND TOSTRING-------------------");
+        //Avestruz Hortencia = new Avestruz("Emú","Ñandú");
+        Avestruz Hortencia = new Avestruz("Emu","Nandu");
+        Hortencia.setNombreanimal("Hortencia");
+        System.out.println("La Avestruz se llama: "+Hortencia.getNombreanimal());
+        System.out.println(Hortencia.toString());
+        System.out.println(Hortencia.equals(Hortencia.propiedadAvestrus2)
+                ? "Las propiedades recibidas del Avestruz son iguales"
+                : "Las propiedades del Avestruz son diferentes");
 
+
+        Avestruz Molly = new Avestruz("Gallina","Gallina");
+        Molly.setNombreanimal("Molly");
+        System.out.println("La Avestruz se llama: "+Molly.getNombreanimal());
+        System.out.println(Molly.toString());
+        System.out.println(Molly.equals(Molly.propiedadAvestrus2)
+                ? "Las propiedades recibidas del Avestruz son iguales"
+                : "Las propiedades del Avestruz son diferentes");
     }
 
 }
