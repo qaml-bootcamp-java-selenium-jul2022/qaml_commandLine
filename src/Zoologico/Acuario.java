@@ -15,4 +15,15 @@ public class Acuario extends Animal {
     public void dormir() {
         System.out.println("Los animales marinos son muy variables sus horas de suenio");
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
+
+    @Override
+    public String equals() {
+        return "";
+    }
+
 }

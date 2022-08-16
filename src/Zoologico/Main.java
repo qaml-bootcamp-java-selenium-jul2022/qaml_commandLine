@@ -30,10 +30,11 @@ public class Main {
         System.out.println(leon.edad);
         System.out.println(leon.genero);
 
-        Aviario pavorreal = new Aviario();
+        Aviario pavorreal = new Aviario( "pavorreal");
         pavorreal.dormir();
         pavorreal.comer();
         pavorreal.volar();
+        System.out.println(pavorreal.toString());
         pavorreal.color = "Azul turquesa";
         pavorreal.peso = 20.8;
         pavorreal.edad = 20;
@@ -42,6 +43,7 @@ public class Main {
         System.out.println(pavorreal.peso);
         System.out.println(pavorreal.edad);
         System.out.println(pavorreal.genero);
+        System.out.println(pavorreal.equals());
 
         Reptilario serpienteDeCascabel = new Reptilario();
         serpienteDeCascabel.dormir();
@@ -55,6 +57,23 @@ public class Main {
         System.out.println(serpienteDeCascabel.peso);
         System.out.println(serpienteDeCascabel.edad);
         System.out.println(serpienteDeCascabel.genero);
+
+
+        Aviario avestruz = new Aviario( "avestruz");
+        avestruz.dormir();
+        avestruz.comer();
+        avestruz.volar();
+        System.out.println(avestruz.toString());
+        avestruz.color = "Azul";
+        avestruz.peso = 22.8;
+        avestruz.edad = 23;
+        avestruz.genero = "Macho";
+        System.out.println(avestruz.color);
+        System.out.println(avestruz.peso);
+        System.out.println(avestruz.edad);
+        System.out.println(avestruz.genero);
+        System.out.println(avestruz.equals());
+
 
     }
 }

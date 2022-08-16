@@ -16,4 +16,13 @@ public class AnimalesTerrestres extends Animal {
     public void dormir() {
         System.out.println("Algunos animales terrestres suelen dormir largas horas en el día");
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
+    @Override
+    public String equals() {
+        return "";
+    }
 }

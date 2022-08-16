@@ -15,4 +15,14 @@ public class Reptilario extends Animal {
     public void dormir() {
 
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
+
+    @Override
+    public String equals() {
+        return "";
+    }
 }
