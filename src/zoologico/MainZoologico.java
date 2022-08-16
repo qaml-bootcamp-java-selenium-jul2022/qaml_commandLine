@@ -62,7 +62,30 @@ public class MainZoologico {
         pavorreal.infoHabitatAviario();
         pavorreal.TipoDeDesplazamiento();
         pavorreal.TipoDeDieta();
+        System.out.println("");
 
+        Aviario avestruz = new Avestruz();
+        Aviario avestruz2 = new Avestruz("Africano","Americano");
+
+        System.out.println(
+                avestruz2.equals(avestruz2) ?
+                        "Las propiedades recibidas del Avestruz son iguales"
+                        :
+                        "Las propiedades recibidas del Avestruz son diferentes"
+        );
+        System.out.println(avestruz2.toString());
+        avestruz.setNombreanimal("Avestruz");
+        System.out.println(avestruz.getNombreanimal());
+        avestruz.setTipoanimal("Ave");
+        System.out.println(avestruz.getHabitat());
+        System.out.println(avestruz.getTipoanimal());
+        avestruz.setAltura(2.4);
+        System.out.println(avestruz.getAltura()+" cms");
+        avestruz.setPeso(250);
+        System.out.println(pavorreal.getPeso()+" kgs");
+        avestruz.infoHabitatAviario();
+        avestruz.TipoDeDesplazamiento();
+        avestruz.TipoDeDieta();
 
     }
 
