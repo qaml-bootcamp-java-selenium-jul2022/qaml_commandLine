@@ -1,7 +1,6 @@
 package EjerciciosColecciones;
 
 import EjercicioVideojuego.Elfo;
-import sun.lwawt.macosx.CSystemTray;
 
 import java.util.ArrayList;
 import java.util.List;
