@@ -30,5 +30,41 @@ public class MainVideojuego {
 
         System.out.println(elfoTutora.equals("Alex"));
 
+
+        //EJERCICIOS de Diagramas de flujo
+        System.out.println("\n-----------------EJERCICIO DE Diagrama de Flujo -  if and Switch-------------------");
+        Personaje creandoPersonaje = createPersonaje(Personajes.ELFO);
+        Personaje personajeConSwitch = crearPersonajeConSwitch(Personajes.ELFO);
+
+    }
+
+    static Personaje createPersonaje (Personajes personaje){
+        if (personaje.equals(Personajes.HUMANO)){
+            System.out.println("Retornando objeto Humano");
+            return new Humano();
+        }else if (personaje.equals(Personajes.ELFO)){
+            System.out.println("Retornando objeto Elfo");
+            return new Elfo();
+        }else {
+            System.out.println("Retornando objeto Enano");
+            return new Enano();
+        }
+
+        static Personaje crearPersonajeConSwitch(Personajes personaje1){
+            switch (personaje1){
+                case ELFO :
+                    System.out.println("Retornando objeto Elfo");
+                    new Elfo(); //break; //en caso de no usar un return, usar break para cada case
+                case ENANO:
+                    System.out.println("Retornando objeto Elfo");
+                    return new Enano(); //break;
+                default:
+                    System.out.println("Retornando objeto Humano");
+                    return new Humano();
+            }
+        }
+
     }
 }
+
+
