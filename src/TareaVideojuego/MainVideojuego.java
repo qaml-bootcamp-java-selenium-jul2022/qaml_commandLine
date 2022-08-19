@@ -34,7 +34,7 @@ public class MainVideojuego {
         //EJERCICIOS de Diagramas de flujo
         System.out.println("\n-----------------EJERCICIO DE Diagrama de Flujo -  if and Switch-------------------");
         Personaje creandoPersonaje = createPersonaje(Personajes.ELFO);
-        Personaje personajeConSwitch = crearPersonajeConSwitch(Personajes.ELFO);
+        Personaje personajeConSwitch = crearPersonajeConSwitch(Personajes.HUMANO);
 
     }
 
