@@ -73,5 +73,15 @@ public class Main {
         animal4.SonidoAnimal();
         animal4.AccionDelAnimal();
 
+        Avestruz avestruz1 = new Avestruz("Soy un avestruz", "Soy un avestruz");
+        System.out.println(avestruz1);
+
+        System.out.println(
+                avestruz1.equals(avestruz1.cadena2) ?
+                        "Las propiedades recibidas del Avestruz son iguales"
+                        :
+                        "Las propiedades del Avestruz son diferentes"
+        );
+
     }
 }
