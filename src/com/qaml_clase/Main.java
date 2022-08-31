@@ -1,5 +1,8 @@
 package com.qaml_clase;
 
+import EjercicioVideojuego.Elfo;
+import Transportes.AutobusPasajeros;
+import Zoologico.*;
 import Transportes.TransporteAereo;
 
 public class Main {
@@ -28,6 +31,36 @@ public class Main {
 
         EjercicioVideojuego.Elfo elfo1 = new EjercicioVideojuego.Elfo();
         elfo1.Mago();
+
+        // Ejercicio Zoologico
+
+        PersonaEstatica.esteMetodoEsEstatico();
+        System.out.println(PersonaEstatica.nombrePersonaEstatica);
+
+        TransporteAereo transporteAereo = new TransporteAereo(2000) {
+            @Override
+            public void volar() {
+
+            }
+
+            @Override
+            public void Acelerar() {
+
+            }
+        };
+        Animal leon = new Leon();
+        leon.comer();
+        Leon leon2 = new Leon();
+        leon2.mover();
+        Pavorreal pavorreal = new Pavorreal();
+        pavorreal.comer();
+        pavorreal.mover();
+        Delfin delfin = new Delfin();
+        delfin.comer();
+        delfin.mover();
+        SerpienteCascabel serpienteCascabel = new SerpienteCascabel();
+        serpienteCascabel.comer();
+        serpienteCascabel.mover();
 
         Person alumno;
         PersonaEstatica.esteMetodoEsEstatico();
